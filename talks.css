@@ -1,0 +1,25 @@
+.score-0 .star-0,
+.score-1 .star-0,
+.score-2 .star-0,
+.score-3 .star-0
+{
+    background-color: green;
+}
+
+.score-1 .star-1,
+.score-2 .star-1,
+.score-3 .star-1
+{
+    background-color: green;
+}
+
+.score-2 .star-2,
+.score-3 .star-2
+{
+    background-color: green;
+}
+
+.score-3 .star-3
+{
+    background-color: green;
+}
