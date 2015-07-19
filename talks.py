@@ -5,6 +5,7 @@ TEMPLATE = '''\
   <script src='./local/jquery-1.11.3.js' type='text/javascript'></script>
   <script src='./talks.js' type='text/javascript'></script>
   <script src="./local/jquery-ui-1.11.4/jquery-ui.js"></script>
+  <script src="./local/js-cookie-2.0.2/src/js.cookie.js"></script>
 </head>
 <body>
 
