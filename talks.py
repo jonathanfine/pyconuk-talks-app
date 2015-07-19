@@ -4,6 +4,7 @@ TEMPLATE = '''\
   <link rel='stylesheet' href='talks.css'>
   <script src='./local/jquery-1.11.3.js' type='text/javascript'></script>
   <script src='./talks.js' type='text/javascript'></script>
+  <script src="./local/jquery-ui-1.11.4/jquery-ui.js"></script>
 </head>
 <body>
 
@@ -28,7 +29,9 @@ Category:
 </p>
 </div>
 
+<div id='talks'>
 {talks}
+</div>
 
 </body>
 </html>
@@ -44,6 +47,9 @@ talk = '''\
 <span class='star-3'>3</span>
 Title etc for talk {number}.
 </h3>
+</div>
+<div>
+<p>Abstract for talk {number}.</p>
 </div>
 '''.format
 

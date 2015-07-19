@@ -31,6 +31,8 @@ var by_score_handler = function(event){
     var by_score = up_to_class(event.target, 'by-score');
     jQuery('.talk').hide();
     jQuery('.talk.score-' + event.data).show();
+    // Needed if current active talk is hidden.
+    jQuery('#talks').accordion('option', 'active', false);
 };
 
 
@@ -38,6 +40,7 @@ var by_score_all_handler = function(event){
 
     var by_score = up_to_class(event.target, 'by-score');
     jQuery('.talk').show();
+    jQuery('#talks').accordion('option', 'active', false);
 };
 
 
@@ -51,6 +54,11 @@ var ready_handler = function()
     }
 
     jQuery('.by-score-all').on('click', by_score_all_handler);
+    jQuery('#talks').accordion({
+        active: false,
+        collapsible: true,
+        header: '.talk'
+    });
 };
 
 
