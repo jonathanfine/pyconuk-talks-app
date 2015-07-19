@@ -59,7 +59,7 @@ var ready_handler = function()
     var i;
     var tmp;
 
-    tmp = Cookies.getJSON('preferences');
+    tmp = Cookies.getJSON('preferences') || [];
     jQuery('.talk').each(
         function(index, talk){
             var key = talk.id.substring(5);
